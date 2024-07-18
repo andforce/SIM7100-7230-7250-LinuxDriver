@@ -40,14 +40,23 @@ Notes: there are 6 ports for SIM7100 modules in Linux host.
 
 ## SIMCOM7系列PCM情况
 SIM7000x	✅
+
 SIM7020	❌
+
 SIM7060G	国内没有卖的，不考虑
+
 SIM7100E	✅ AT+CPCMREG 文档中有
+
 SIM7500A	✅ AT+CPCMREG 文档中有
+
 SIM7500E	✅ AT+CPCMREG 文档中有
+
 SIM7600C	✅ AT+CPCMREG 文档中有
+
 SIM7600E	✅ AT+CPCMREG 文档中有
+
 SIM A7670E ✅ AT+CPCMREG 文档中有
+
 
 驱动文件来源：https://simcom.ee/documents/?dir=SIM7100E/Driver/Linux
 
