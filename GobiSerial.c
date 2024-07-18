@@ -310,13 +310,13 @@ static int GobiProbe(
    {
        unsigned long num;
        bool is_supported = true;
-       u8 *iface_info;
+       const u8 *iface_info;
        printk("%d", ((struct gobiserial_driver_info*)pID->driver_info)->iface_info_len);
        iface_info = ((struct gobiserial_driver_info*)pID->driver_info)->iface_info;
        for (num=0; num<((struct gobiserial_driver_info*)pID->driver_info)->iface_info_len; num++)
        {
-         printk("num=%d, inface_num=%p", num, iface_info);
-         printk("num=%d, inface_num=%d", num, iface_info[num]);
+         printk("num=%lu, inface_num=%p", num, iface_info);
+         printk("num=%lu, inface_num=%d", num, iface_info[num]);
 
          if (((struct gobiserial_driver_info*)pID->driver_info)->iface_info[num] == nInterfaceNum)
            {
