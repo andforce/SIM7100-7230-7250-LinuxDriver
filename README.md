@@ -31,12 +31,12 @@
 
 ## 各个串口的作用
 Notes: there are 6 ports for SIM7100 modules in Linux host.
-1) /dev/ttyUSB0-diag port for output developing messages
-2) /dev/ttyUSB1- NMEA port for GPS NMEA data output
-3) /dev/ttyUSB2-AT port for AT commands
-4) /dev/ttyUSB3-Modem port for ppp-dial
-5) /dev/ttyUSB4-audio port
-6) /dev/ttyUSB5-Virtual Net card
+1) /dev/ttyUSB0 : diag port for output developing messages
+2) /dev/ttyUSB1 : NMEA port for GPS NMEA data output
+3) /dev/ttyUSB2 : AT port for AT commands
+4) /dev/ttyUSB3 : Modem port for ppp-dial
+5) /dev/ttyUSB4 : audio port
+6) /dev/ttyUSB5 : Virtual Net card
 
 驱动文件来源：https://simcom.ee/documents/?dir=SIM7100E/Driver/Linux
 
