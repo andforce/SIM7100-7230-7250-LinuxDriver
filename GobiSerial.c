@@ -64,7 +64,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #define MAX_BULK_EPS         6
 
 // Debug flag
-static int debug = 1;
+static bool debug = 1;
 
 // Global pointer to usb_serial_generic_close function
 // This function is not exported, which is why we have to use a pointer
@@ -96,7 +96,7 @@ static int debug = 1;
 
 struct gobiserial_driver_info
 {
-    u8 *iface_info;
+    const u8 *iface_info;
     u32 iface_info_len;
 };
 
