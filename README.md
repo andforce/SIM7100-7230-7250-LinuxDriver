@@ -5,7 +5,8 @@
 2. 执行 `lsusb`,查找 vid:pid 是 1e0e:9001 的USB设备
    ![image](https://github.com/user-attachments/assets/e77ce146-f707-4b23-a409-4d219bd3bee4)
 3. 执行`sudo rmmod usbserial`命令移除usb串口设备，这时候会报错，直接忽略就行
-4. 编译GobiSerial.c
+   > rmmod: ERROR: Module usbserial is in use by: option usb_wwan
+5. 编译GobiSerial.c
    ```shell
    $ make
    rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions Module.* modules.order
@@ -22,7 +23,7 @@
    
    ```
    如果能生成 `GobiSerial.ko` 这个文件，就表示成功编译了，忽略警告信息就行
-5. 启用驱动`sudo modprobe usbserial && sudo insmod GobiSerial.ko`
+6. 启用驱动`sudo modprobe usbserial && sudo insmod GobiSerial.ko`
    ```shell
    $ sudo modprobe usbserial && sudo insmod GobiSerial.ko
    ```
